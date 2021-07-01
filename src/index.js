@@ -13,7 +13,9 @@ async function fetchAndParse(apiURl) {
 
 /** Run all */
 function init() {
-  fetchAndParse(API).then((json) => console.log(json.content));
+  fetchAndParse(API)
+    .then((json) => console.log(json.content))
+    .catch(() => console.log("Probably you don't have internet."));
 }
 
 module.exports = { init };
