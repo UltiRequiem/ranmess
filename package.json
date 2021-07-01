@@ -1,14 +1,15 @@
 {
   "name": "ranmess",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random quotes on Terminal",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "bin": {
+    "ranmess": "./bin/ranmess"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UltiRequiem/random-message.git"
+    "url": "git+https://github.com/UltiRequiem/ranmess.git"
   },
   "keywords": [
     "random",
@@ -18,9 +19,9 @@
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/UltiRequiem/random-message/issues"
+    "url": "https://github.com/UltiRequiem/ranmess/issues"
   },
-  "homepage": "https://github.com/UltiRequiem/random-message#readme",
+  "homepage": "https://github.com/UltiRequiem/ranmess#readme",
   "dependencies": {
     "node-fetch": "^2.6.1"
   },
