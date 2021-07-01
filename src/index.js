@@ -14,7 +14,7 @@ async function fetchAndParse(apiURl) {
 /** Run all */
 function init() {
   fetchAndParse(API)
-    .then((json) => console.log(json.content))
+    .then((json) => console.log(`${json.content} \n  - ${json.author}`))
     .catch(() => console.log("Probably you don't have internet."));
 }
 
