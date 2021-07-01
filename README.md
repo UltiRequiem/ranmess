@@ -24,4 +24,4 @@ ranmess
 
 I also developed this in Python: [UltiRequiem/quoteran](https://github.com/UltiRequiem/quoteran)
 
-(**Spoiler**: Is a lot more easy and comforting to develop in Nodejs.)
+(**Spoiler**: Is a lot more easy and comforting develop in Nodejs.)
