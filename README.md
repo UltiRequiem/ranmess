@@ -2,13 +2,23 @@
 
 Get random quotes in terminal.
 
-This project makes Fetch of the [Quotable.io API](https://api.quotable.io/random).
+This project fetch the [Quotable.io API](https://api.quotable.io/random).
 
 ![Screenshot](./assets/screenshot.png)
 
 ## Install
 
-`npm -g i ranmess`
+Using npm:
+
+```bash
+npm -g i ranmess
+```
+
+Using yarn:
+
+```bash
+yarn global add ranmess
+```
 
 ## Usage
 
@@ -18,10 +28,8 @@ ranmess
 
 ### License
 
-[MIT](./LICENSE)
+This program is licensed under the [MIT](./LICENSE) License.
 
 ### Alternative
 
 I also developed this in Python: [UltiRequiem/quoteran](https://github.com/UltiRequiem/quoteran)
-
-(**Spoiler**: Is a lot more easy and comforting develop in Nodejs.)
