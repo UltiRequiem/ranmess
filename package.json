@@ -1,6 +1,6 @@
 {
   "name": "ranmess",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Random quotes on Terminal",
   "main": "src/index.js",
   "scripts": {
