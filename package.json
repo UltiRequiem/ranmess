@@ -4,7 +4,9 @@
   "description": "Random quotes on Terminal",
   "main": "src/index.js",
   "scripts": {
-    "start": "./bin/ranmess"
+    "start": "./bin/ranmess",
+    "format": "npx prettier --write '**/**/*.js'",
+    "lint": "npx eslint . --ext .js"
   },
   "bin": {
     "ranmess": "./bin/ranmess"
