@@ -26,18 +26,26 @@ ranmess
 
 A random quote and its author will be printed!
 
-## Usage Example
+## Library
+
+### Usage Example
 
 ```typescript
-// On Node.js
-// import { randomQuotable } from "ranmess";
 import { randomQuotable } from "https://deno.land/x/ranmess/mod.ts";
 
 const quote = await randomQuotable();
 console.log(` ${quote.content} \n  - ${quote.author}`);
 ```
 
+On Node.js the API is the same but the import is 👇
+
+```typescript
+import { randomQuotable } from "ranmess";
+```
+
 Check the [cli source](./ranmess.ts) for more.
+
+[Documentation](https://doc.deno.land/https://deno.land/x/ranmess/mod.ts)
 
 ## Support
 
