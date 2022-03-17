@@ -10,7 +10,7 @@ const publisher = {
 const packageConfig = {
   name: "ranmess",
   repoName: "ranmess",
-  version: "2.0.1",
+  version: "2.0.3",
   description: "Quotable Wrapper and CLI Tool",
   keywords: ["quotes", "quote", "random", "random-quote"],
   license: "MIT",
@@ -41,6 +41,7 @@ await build({
     version: packageConfig.version,
 
     homepage: packageConfig.homepage,
+    license: packageConfig.license,
 
     funding: {
       type: "patreon",
