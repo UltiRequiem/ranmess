@@ -1,0 +1,21 @@
+{
+  "name": "ranmess",
+  "entry": "./mod.ts",
+  "readme": "./readme.md",
+  "description": "Quotable Wrapper and CLI Tool",
+  "homepage": "https://github.com/UltiRequiem/ranmess",
+  "version": "2.1.1",
+  "releaseType": "patch",
+  "files": [
+    "*.ts",
+    "readme.md"
+  ],
+  "ignore": [
+    ".vim",
+    ".github",
+    ".git"
+  ],
+  "checkTests": "ls",
+  "check": true,
+  "unlisted": false
+}

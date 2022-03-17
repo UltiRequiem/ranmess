@@ -1,7 +1,7 @@
-import { randomQuotable } from "./mod.ts";
+import { quotableRandom } from "./mod.ts";
 
 // TODO: Add tests
 Deno.test("[randomQuotable]", async () => {
-  const quote = await randomQuotable();
+  const quote = await quotableRandom();
   console.log(quote);
 });

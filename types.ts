@@ -2,13 +2,13 @@ import { AVAILABLE_TAGS } from "./config.ts";
 
 export interface Quotable {
   _id: string;
-  tags: keyof typeof AVAILABLE_TAGS[number][];
   content: string;
   author: string;
   authorSlug: string;
   length: number;
   dateAdded: string;
   dateModified: string;
+  tags: keyof typeof AVAILABLE_TAGS[number][];
 }
 
 export interface QuotableConfig {
@@ -35,4 +35,31 @@ export interface QuotableConfig {
    * quotes that have either of the provided author name.
    */
   author: string;
+}
+
+export interface QuotableAuthor {
+  /** A unique id for this author */
+  _id: string;
+  /** A brief, one paragraph bio of the author. Source wiki API. */
+  bio: string;
+  /** A one-line description of the author. */
+  description: string;
+  /** The link to the author's wikipedia page or official website. */
+  link: string;
+  /** The authors full name. */
+  name: string;
+  /** A slug is a URL-friendly ID derived from the authors name. */
+  slug: string;
+  /** The number of quotes by this author. */
+  quoteCount: string;
+}
+
+export interface TagResponse {
+  /** The number of all tags by this request. */
+  count: number;
+  /** The array of tags. */
+  results: {
+    _id: string;
+    name: string;
+  }[];
 }
