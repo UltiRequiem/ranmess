@@ -35,16 +35,16 @@ A random quote and its author will be printed!
 On Deno 🚀
 
 ```typescript
-import { randomQuotable } from "https://deno.land/x/ranmess/mod.ts";
+import { quotableRandom } from "https://deno.land/x/ranmess/mod.ts";
 
-const quote = await randomQuotable();
+const quote = await quotableRandom();
 console.log(` ${quote.content} \n  - ${quote.author}`);
 ```
 
 On Node.js the API is the same but the import is 👇
 
 ```typescript
-import { randomQuotable } from "ranmess";
+import { quotableRandom } from "ranmess";
 ```
 
 Check the [cli source](./ranmess.ts) for more.
