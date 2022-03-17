@@ -14,8 +14,8 @@ import type {
  */
 export async function quotableRandom(params: Partial<QuotableConfig> = {}) {
   const response = await fetch(addParams(`${API}/random`, params));
-  const data: Quotable = await response.json();
-  return data;
+  const data = await response.json();
+  return data as Quotable;
 }
 
 /**
@@ -23,8 +23,8 @@ export async function quotableRandom(params: Partial<QuotableConfig> = {}) {
  */
 export async function quotableTags() {
   const response = await fetch(`${API}/tags`);
-  const data: TagResponse = await response.json();
-  return data;
+  const data = await response.json();
+  return data as TagResponse;
 }
 
 /**
@@ -32,8 +32,8 @@ export async function quotableTags() {
  */
 export async function quotableAuthor(authorID: string) {
   const response = await fetch(`${API}/authors/${authorID}`);
-  const data: QuotableAuthor = await response.json();
-  return data;
+  const data = await response.json();
+  return data as QuotableAuthor;
 }
 
 /**
@@ -41,6 +41,6 @@ export async function quotableAuthor(authorID: string) {
  */
 export async function quotableQuote(quoteID: string) {
   const response = await fetch(`${API}/quotes/${quoteID}`);
-  const data: Quotable = await response.json();
-  return data;
+  const data = await response.json();
+  return data as Quotable;
 }

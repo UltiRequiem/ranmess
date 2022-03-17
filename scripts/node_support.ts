@@ -10,7 +10,7 @@ const publisher = {
 const packageConfig = {
   name: "ranmess",
   repoName: "ranmess",
-  version: "2.1.1",
+  version: "2.1.3",
   description: "Quotable Wrapper and CLI Tool",
   keywords: ["quotes", "quote", "random", "random-quote"],
   license: "MIT",
