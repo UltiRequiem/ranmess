@@ -10,7 +10,7 @@ const publisher = {
 const packageConfig = {
   name: "ranmess",
   repoName: "ranmess",
-  version: "2.1.3",
+  version: "2.1.4",
   description: "Quotable Wrapper and CLI Tool",
   keywords: ["quotes", "quote", "random", "random-quote"],
   license: "MIT",
@@ -40,6 +40,8 @@ await build({
 
     version: packageConfig.version,
 
+    browser: "./browser.js",
+
     homepage: packageConfig.homepage,
     license: packageConfig.license,
 
@@ -62,3 +64,9 @@ await build({
 
 await Deno.copyFile("license", "node/license");
 await Deno.copyFile("readme.md", "node/readme.md");
+
+const bundle = Deno.run({
+  cmd: ["deno", "bundle", "mod.ts", "node/browser.js"],
+});
+
+await bundle.status();

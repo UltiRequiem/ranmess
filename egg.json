@@ -4,10 +4,14 @@
   "readme": "./readme.md",
   "description": "Quotable Wrapper and CLI Tool",
   "homepage": "https://github.com/UltiRequiem/ranmess",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "releaseType": "patch",
-  "files": ["*.ts", "readme.md"],
+  "files": [
+    "*.ts",
+    "readme.md"
+  ],
   "checkTests": "ls",
   "check": true,
-  "unlisted": false
+  "unlisted": false,
+  "ignore": []
 }
