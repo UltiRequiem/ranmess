@@ -26,7 +26,7 @@ ranmess
 
 A random quote and its author will be printed!
 
-https://user-images.githubusercontent.com/71897736/158712253-22b7ce7a-9f85-43ab-9a16-6df967975add.mp4
+[Video Showcase](https://youtu.be/d5GWTWadbjU)
 
 ## Library
 

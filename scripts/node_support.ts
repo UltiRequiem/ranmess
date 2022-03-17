@@ -2,7 +2,7 @@ import { build } from "https://deno.land/x/dnt/mod.ts";
 
 const username = "ultirequiem";
 
-const packageName = "six";
+const packageName = "ranmess";
 const description = "Quotable Wrapper and CLI Tool";
 
 const outDir = "node";
