@@ -18,6 +18,8 @@ deno install --allow-net https://deno.land/x/ranmess/ranmess.ts
 npm install -g ranmess
 ```
 
+[A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/ranmess/releases/latest)
+
 ### Usage
 
 ```sh
