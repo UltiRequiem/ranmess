@@ -50,7 +50,7 @@ await build({
       url: `https://www.patreon.com/${publisher.username}`,
     },
 
-    repository: `github:${publisher.username}/${packageConfig.name}`,
+    repository: `github:${publisher.username}/${packageConfig.repoName}`,
 
     bugs: {
       url:
