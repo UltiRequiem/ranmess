@@ -1,4 +1,4 @@
-import { build } from "https://deno.land/x/dnt/mod.ts";
+import { build } from "https://deno.land/x/dnt@0.21.2/mod.ts";
 
 const publisher = {
   name: "Eliaz Bobadilla",
@@ -19,8 +19,8 @@ const packageConfig = {
 
 await build({
   entryPoints: ["./mod.ts", {
-    name: "ranmess",
-    path: "./ranmess.ts",
+    name: packageConfig.name,
+    path: `./${packageConfig.name}.ts`,
     kind: "bin",
   }],
 
