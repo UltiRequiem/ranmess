@@ -10,7 +10,7 @@ const publisher = {
 const packageConfig = {
   name: "@ultirequiem/ranmess",
   repoName: "ranmess",
-  version: "2.1.4",
+  version: "2.1.5",
   description: "Quotable Wrapper and CLI Tool",
   keywords: ["quotes", "quote", "random", "random-quote"],
   license: "MIT",
@@ -20,7 +20,7 @@ const packageConfig = {
 await build({
   entryPoints: ["./mod.ts", {
     name: packageConfig.name,
-    path: `./ranmess.ts`,
+    path: `./src/ranmess.ts`,
     kind: "bin",
   }],
 

@@ -1,4 +1,4 @@
-import { AVAILABLE_TAGS } from "./config.ts";
+import { AVAILABLE_TAGS } from "./tags.ts";
 
 export interface Quotable {
   _id: string;
