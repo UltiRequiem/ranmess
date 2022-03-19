@@ -11,7 +11,7 @@ A [Quotable](https://github.com/lukePeavey/quotable) API Wrapper and CLI Tool.
 - [Deno](https://deno.land)
 
 ```sh
-deno install --allow-net https://deno.land/x/ranmess/ranmess.ts
+deno install --allow-net https://deno.land/x/ranmess/src/ranmess.ts
 ```
 
 - [Node.js](https://nodejs.org)
