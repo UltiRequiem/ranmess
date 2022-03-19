@@ -8,7 +8,7 @@ const publisher = {
 };
 
 const packageConfig = {
-  name: "ranmess",
+  name: "@ultirequiem/ranmess",
   repoName: "ranmess",
   version: "2.1.4",
   description: "Quotable Wrapper and CLI Tool",
@@ -20,7 +20,7 @@ const packageConfig = {
 await build({
   entryPoints: ["./mod.ts", {
     name: packageConfig.name,
-    path: `./${packageConfig.name}.ts`,
+    path: `./ranmess.ts`,
     kind: "bin",
   }],
 
@@ -62,11 +62,12 @@ await build({
   },
 });
 
-await Deno.copyFile("license", "node/license");
-await Deno.copyFile("readme.md", "node/readme.md");
-
 const bundle = Deno.run({
   cmd: ["deno", "bundle", "mod.ts", "node/browser.js"],
 });
 
-await bundle.status();
+await Promise.all([
+  Deno.copyFile("license", "node/license"),
+  Deno.copyFile("readme.md", "node/readme.md"),
+  bundle.status(),
+]);

@@ -2,6 +2,8 @@
 
 A [Quotable](https://github.com/lukePeavey/quotable) API Wrapper and CLI Tool.
 
+> Quotable is a free, open source quotations API.
+
 ## CLI
 
 ### Install
@@ -32,9 +34,7 @@ A random quote and its author will be printed!
 
 ## Library
 
-### Usage
-
-On Deno 🚀
+- [Deno 🚀](https://deno.land/x/ranmess)
 
 ```typescript
 import { quotableRandom } from "https://deno.land/x/ranmess/mod.ts";
@@ -43,11 +43,13 @@ const quote = await quotableRandom();
 console.log(` ${quote.content} \n  - ${quote.author}`);
 ```
 
-On Node.js the API is the same but the import is 👇
+- [Node.js 🐢](https://www.npmjs.com/package/ranmess)
 
 ```typescript
 import { quotableRandom } from "ranmess";
 ```
+
+> The API is the same on both
 
 Check the [cli source](./ranmess.ts) for more.
 
