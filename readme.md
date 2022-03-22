@@ -1,6 +1,6 @@
 # ranmess
 
-[![CI](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yaml)
+[![CI](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yml/badge.svg)](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/ultirequiem/ranmess/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/ranmess)
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/ranmess/mod.ts)
 
