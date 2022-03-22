@@ -1,73 +1,9 @@
-import { build } from "https://deno.land/x/dnt@0.22.0/mod.ts";
+import { buildPackage } from "https://deno.land/x/ultirequiem/node_support.ts";
 
-const publisher = {
-  name: "Eliaz Bobadilla",
-  username: "ultirequiem",
-  email: "eliaz.bobadilladev@gmail.com",
-  site: "https://ultirequiem.com",
-};
-
-const packageConfig = {
-  name: "@ultirequiem/ranmess",
-  repoName: "ranmess",
-  version: "2.1.5",
-  description: "Quotable Wrapper and CLI Tool",
-  keywords: ["quotes", "quote", "random", "random-quote"],
-  license: "MIT",
+await buildPackage({
+  repoName: "@ultirequiem/ranmess",
+  description: "Quotable Wrapper and CLI Tool.",
   homepage: "https://ranmess.js.org",
-};
-
-await build({
-  entryPoints: ["./mod.ts", {
-    name: packageConfig.name,
-    path: `./src/ranmess.ts`,
-    kind: "bin",
-  }],
-
-  outDir: "node",
-  shims: {
-    deno: true,
-    undici: true,
-  },
-
-  // Only Support ESM
-  scriptModule: false,
-
-  package: {
-    name: packageConfig.name,
-    description: packageConfig.description,
-    author: `${publisher.name} <${publisher.email}> (${publisher.site})`,
-
-    version: packageConfig.version,
-
-    browser: "./browser.js",
-
-    homepage: packageConfig.homepage,
-    license: packageConfig.license,
-
-    funding: {
-      type: "patreon",
-      url: `https://www.patreon.com/${publisher.username}`,
-    },
-
-    repository: `github:${publisher.username}/${packageConfig.repoName}`,
-
-    bugs: {
-      url:
-        `https://github.com/${publisher.username}/${packageConfig.repoName}/issues`,
-      email: publisher.email,
-    },
-
-    keywords: packageConfig.keywords,
-  },
-});
-
-const bundle = Deno.run({
-  cmd: ["deno", "bundle", "mod.ts", "node/browser.js"],
-});
-
-await Promise.all([
-  Deno.copyFile("license", "node/license"),
-  Deno.copyFile("readme.md", "node/readme.md"),
-  bundle.status(),
-]);
+  keywords: ["quotes", "quote", "random", "random-quote"],
+  version: "2.1.6",
+}, { supportCJS: false, shims: { undici: true, deno: true } });
