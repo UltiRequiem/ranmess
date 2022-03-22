@@ -31,7 +31,7 @@ jobs:
         run: deno bundle mod.ts mod.bundle.js
 
       - name: Tests
-        run: deno test --coverage=./cov
+        run: deno test --allow-net --coverage=./cov
 
       - name: Generate Coverage
         if: matrix.os == 'ubuntu-latest'
