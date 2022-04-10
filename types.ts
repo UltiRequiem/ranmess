@@ -1,5 +1,3 @@
-import { AVAILABLE_TAGS } from "./tags.ts";
-
 export interface Quotable {
   _id: string;
   content: string;
@@ -8,7 +6,7 @@ export interface Quotable {
   length: number;
   dateAdded: string;
   dateModified: string;
-  tags: keyof typeof AVAILABLE_TAGS[number][];
+  tags: string[];
 }
 
 export interface QuotableConfig {
