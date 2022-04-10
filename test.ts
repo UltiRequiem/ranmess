@@ -1,4 +1,6 @@
 import {
+  cleanQuote,
+  cleanTags,
   quotableAuthor,
   quotableQuote,
   quotableRandom,
@@ -22,5 +24,15 @@ Deno.test("[quotableAuthor]", async () => {
 
 Deno.test("[quotableQuote]", async () => {
   const quote = await quotableQuote("9gCEJkS5uaRS");
+  console.log(quote);
+});
+
+Deno.test("[cleanQuote]", async () => {
+  const quote = await cleanQuote();
+  console.log(quote);
+});
+
+Deno.test("[cleanTags]", async () => {
+  const quote = await cleanTags();
   console.log(quote);
 });

@@ -3,9 +3,46 @@
 [![Code Coverage](https://codecov.io/gh/ultirequiem/ranmess/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/ranmess)
 [![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/ranmess/mod.ts)
 
-A [Quotable](https://github.com/lukePeavey/quotable) API Wrapper and CLI Tool.
+The most complete [Quotable](https://github.com/lukePeavey/quotable) API Wrapper
+and CLI Tool.
 
 > Quotable is a free, open source quotations API.
+
+## Usage
+
+The API is the same on all this platforms ✔️
+
+### [Deno 🦕](https://deno.land/x/ranmess)
+
+```javascript
+import * as ranmess from "https://deno.land/x/ranmess/mod.ts";
+
+ranmess.cleanQuote(); //=> "In seed time learn, in harvest teach, in winter enjoy."
+ranmess.cleanQuote(); //=> "A leader is one who knows the way, goes the way, and shows the way."
+
+ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", "friendship", "future", ..etc]
+```
+
+### [Node.js 🐢🚀](https://npmjs.com/package/ranmess)
+
+```javascript
+import * as ranmess from "ranmess";
+```
+
+### [Browser 🌐](https://developer.mozilla.org/en-US/docs/Glossary/Browser)
+
+You can use any [CDN](https://en.wikipedia.org/wiki/Content_delivery_network) 🔥
+
+Eg 👉
+[ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ↔️
+[SkyPack](https://cdn.skypack.dev/ranmess) 🆚
+[Script Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+↔️ [JSDelivr](https://cdn.jsdelivr.net/npm/ranmess)
+
+## Documentation
+
+Is hosted on
+[Deno Doc](https://doc.deno.land/https://deno.land/x/ranmess/mod.ts) 📄
 
 ## CLI 💻
 
