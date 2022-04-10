@@ -1,6 +1,6 @@
 import { addParams } from "https://deno.land/x/add_params@v0.1.0/mod.ts";
 
-export const QuotableTags = [
+export const QUOTABLE_TAGS = [
   "business",
   "education",
   "faith",
@@ -23,7 +23,7 @@ export const QuotableTags = [
   "wisdom",
 ] as const;
 
-export type QuotableTag = typeof QuotableTags[number];
+export type QuotableTag = typeof QUOTABLE_TAGS[number];
 
 export interface Quotable {
   _id: string;

@@ -20,7 +20,7 @@ import * as ranmess from "https://deno.land/x/ranmess/mod.ts";
 ranmess.cleanQuote(); //=> "In seed time learn, in harvest teach, in winter enjoy."
 ranmess.cleanQuote(); //=> "A leader is one who knows the way, goes the way, and shows the way."
 
-ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", "friendship", "future", ..etc]
+ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", ..etc]
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/ranmess)
@@ -43,6 +43,8 @@ Eg 👉
 
 Is hosted on
 [Deno Doc](https://doc.deno.land/https://deno.land/x/ranmess/mod.ts) 📄
+
+This module is fully typed, includes lot of utils and interfaces!
 
 ## CLI 💻
 
@@ -84,6 +86,11 @@ Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
 my work 🚀
 
 Don't forget to start the repo ⭐
+
+## Versioning
+
+We use [Semantic Versioning](http://semver.org). For the versions available, see
+the [tags](https://github.com/UltiRequiem/ranmess/tags) 🏷️
 
 ## Other Art
 
