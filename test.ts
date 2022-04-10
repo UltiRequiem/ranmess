@@ -1,8 +1,8 @@
 import {
-  quotableRandom,
-  quotableTags,
   quotableAuthor,
   quotableQuote,
+  quotableRandom,
+  quotableTags,
 } from "./mod.ts";
 
 Deno.test("[quotableRandom]", async () => {
@@ -15,12 +15,10 @@ Deno.test("[quotableTags]", async () => {
   console.log(quote);
 });
 
-
 Deno.test("[quotableAuthor]", async () => {
   const quote = await quotableAuthor("yBDYq_Vtnuw");
   console.log(quote);
 });
-
 
 Deno.test("[quotableQuote]", async () => {
   const quote = await quotableQuote("9gCEJkS5uaRS");
