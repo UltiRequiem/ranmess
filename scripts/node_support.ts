@@ -10,9 +10,10 @@ buildPackage(
   },
   {
     supportCJS: false,
+    check: false,
     entryPoints: [
       "./mod.ts",
       { kind: "bin", name: "ranmess", path: "./ranmess.ts" },
     ],
-  },
+  }
 );
