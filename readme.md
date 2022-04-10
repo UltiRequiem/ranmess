@@ -73,7 +73,7 @@ ranmess
 
 A random quote and its author will be printed!
 
-[Video Showcase](https://youtu.be/d5GWTWadbjU) 🎥
+[Video Showcase](https://youtu.be/42-AMus4olQ) 🎥
 
 ## Support
 
