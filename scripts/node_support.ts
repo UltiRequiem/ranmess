@@ -15,5 +15,5 @@ buildPackage(
       "./mod.ts",
       { kind: "bin", name: "ranmess", path: "./ranmess.ts" },
     ],
-  }
+  },
 );
