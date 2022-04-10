@@ -52,7 +52,8 @@ Don't forget to start the repo ⭐
 
 I also made this on [Rust](https://github.com/UltiRequiem/ruquotes),
 [Python](https://github.com/UltiRequiem/quoteran), and
-[Go](https://github.com/UltiRequiem/quotable). Even a [website](https://github.com/UltiRequiem/ulti-random-quotes)!
+[Go](https://github.com/UltiRequiem/quotable). Even a
+[website](https://github.com/UltiRequiem/ulti-random-quotes)!
 
 ## Licence
 
