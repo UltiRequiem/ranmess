@@ -7,17 +7,17 @@ A [Quotable](https://github.com/lukePeavey/quotable) API Wrapper and CLI Tool.
 
 > Quotable is a free, open source quotations API.
 
-## CLI
+## CLI 💻
 
-### Install
+### Install 📦
 
-#### **Deno 🎃**
+#### Deno
 
 ```sh
 deno install --allow-net https://deno.land/x/ranmess/src/ranmess.ts
 ```
 
-#### Node.js 🐼
+#### Node.js
 
 ```sh
 npm install -g ranmess
@@ -26,7 +26,7 @@ npm install -g ranmess
 [A binary for multiple platforms is provided too!](https://github.com/UltiRequiem/ranmess/releases/latest)
 🤖
 
-### Usage
+### Usage 🕹️
 
 ```sh
 ranmess
