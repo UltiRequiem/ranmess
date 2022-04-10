@@ -14,5 +14,4 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: export NODE_OPTIONS=--experimental-fetch
-      - run: deno run --allow-net --allow-env --allow-read --allow-write --allow-run scripts/node_support.ts
+      - run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node_support.ts
