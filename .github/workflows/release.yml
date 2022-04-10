@@ -1,7 +1,6 @@
 name: Compile
 
 on:
-  workflow_dispatch:
   push:
     tags:
       - "*"
