@@ -53,7 +53,7 @@ This module is fully typed, includes lot of utils and interfaces!
 #### Deno
 
 ```sh
-deno install --allow-net https://deno.land/x/ranmess/src/ranmess.ts
+deno install --allow-net https://deno.land/x/ranmess/ranmess.ts
 ```
 
 #### Node.js
