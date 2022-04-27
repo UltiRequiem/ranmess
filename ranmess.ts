@@ -1,5 +1,5 @@
-import { Command } from "https://deno.land/x/cliffy@v0.23.0/command/mod.ts";
-import { colors } from "https://deno.land/x/cliffy@v0.23.0/ansi/mod.ts";
+import { Command } from "https://deno.land/x/cliffy@v0.23.1/command/mod.ts";
+import { colors } from "https://deno.land/x/cliffy@v0.23.1/ansi/mod.ts";
 import { quotableRandom } from "./mod.ts";
 
 const root = new Command()
