@@ -20,6 +20,7 @@ jobs:
           deno-version: v1.x
 
       - name: Setup Node
+        if: matrix.os == 'ubuntu-latest'
         uses: actions/setup-node@v3
         with:
           node-version: "17.5"
