@@ -6,7 +6,7 @@ buildPackage(
     description: "Quotable Wrapper and CLI Tool.",
     homepage: "https://ranmess.js.org",
     keywords: ["quotes", "quote", "random", "random-quote"],
-    version: "2.2.0",
+    version: "2.3.0",
   },
   {
     supportCJS: false,

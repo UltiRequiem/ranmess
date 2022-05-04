@@ -1,5 +1,6 @@
 import { Command } from "https://deno.land/x/cliffy@v0.24.0/command/mod.ts";
 import { colors } from "https://deno.land/x/cliffy@v0.24.0/ansi/mod.ts";
+import pLimit from "https://esm.sh/p-limit";
 import { quotableRandom } from "./mod.ts";
 
 const root = new Command()
@@ -8,9 +9,23 @@ const root = new Command()
   .description("Get random quotes.")
   .arguments("[times]");
 
-const {
+let {
   args: [length = 1],
 } = await root.parse(Deno.args);
+
+if (typeof length !== "number") {
+  const parsed = parseInt(length, 10);
+
+  if (Number.isNaN(parsed)) {
+    const error = colors.red(`The input "${length}" is not a number.`);
+
+    console.error(error);
+
+    Deno.exit(1);
+  }
+
+  length = parsed;
+}
 
 async function printQuote() {
   const quote = await quotableRandom();
@@ -21,4 +36,8 @@ async function printQuote() {
   console.log(`${content} \n - ${author} \n`);
 }
 
-Promise.all(Array.from({ length }, printQuote));
+const limit = pLimit(10);
+
+const limitedQuote = () => limit(printQuote);
+
+Promise.all(Array.from({ length }, limitedQuote));

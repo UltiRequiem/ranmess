@@ -92,10 +92,11 @@ export const API_URL = "https://api.quotable.io";
 /**
  * @returns A random quote.
  */
-export async function quotableRandom(params: Partial<QuotableConfig> = {}) {
+export async function quotableRandom(
+  params: Partial<QuotableConfig> = {},
+): Promise<Quotable> {
   const response = await fetch(addParams(`${API_URL}/random`, params));
-  const data = await response.json();
-  return data as Quotable;
+  return response.json();
 }
 
 /**
@@ -109,10 +110,9 @@ export async function cleanQuote() {
 /**
  * @returns The available tags.
  */
-export async function quotableTags() {
+export async function quotableTags(): Promise<TagResponse[]> {
   const response = await fetch(`${API_URL}/tags`);
-  const data = await response.json();
-  return data as TagResponse[];
+  return response.json();
 }
 
 /**
@@ -126,17 +126,17 @@ export async function cleanTags() {
 /**
  * @returns The data of an specific author.
  */
-export async function quotableAuthor(authorID: string) {
+export async function quotableAuthor(
+  authorID: string,
+): Promise<QuotableAuthor> {
   const response = await fetch(`${API_URL}/authors/${authorID}`);
-  const data = await response.json();
-  return data as QuotableAuthor;
+  return response.json();
 }
 
 /**
  * @returns The data of an specific quote.
  */
-export async function quotableQuote(quoteID: string) {
+export async function quotableQuote(quoteID: string): Promise<Quotable> {
   const response = await fetch(`${API_URL}/quotes/${quoteID}`);
-  const data = await response.json();
-  return data as Quotable;
+  return response.json();
 }
