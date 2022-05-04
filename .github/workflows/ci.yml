@@ -48,4 +48,4 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "17.5"
-      - run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node_support.ts
+        run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node_support.ts
