@@ -20,7 +20,7 @@ import * as ranmess from "https://deno.land/x/ranmess/mod.ts";
 ranmess.cleanQuote(); //=> "In seed time learn, in harvest teach, in winter enjoy."
 ranmess.cleanQuote(); //=> "A leader is one who knows the way, goes the way, and shows the way."
 
-ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", ..etc]
+ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", ...etc]
 ```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/ranmess)
