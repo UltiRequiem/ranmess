@@ -42,3 +42,8 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           files: cov.lcov
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "17.5"
+      - run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node_support.ts
