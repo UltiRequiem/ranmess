@@ -1,5 +1,5 @@
 import { addParams } from "https://deno.land/x/add_params@v0.1.0/mod.ts";
-import type { ItemOf } from "https://deno.land/x/ultirequiem@0.0.13/types.ts";
+import type { ItemOf } from "https://deno.land/x/ultirequiem@0.0.14/types.ts";
 
 export const QUOTABLE_TAGS = [
   "business",
