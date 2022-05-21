@@ -1,4 +1,4 @@
-import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.15/node_support.ts";
+import { buildPackage } from "https://deno.land/x/ultirequiem@0.0.15/node.ts";
 
 buildPackage(
   {
@@ -10,7 +10,7 @@ buildPackage(
   },
   {
     supportCJS: false,
-    check: false,
+    typeCheck: false,
     entryPoints: [
       "./mod.ts",
       { kind: "bin", name: "ranmess", path: "./ranmess.ts" },
