@@ -1,5 +1,4 @@
 import { addParams } from "https://deno.land/x/add_params@v0.1.0/mod.ts";
-import type { ItemOf } from "https://deno.land/x/ultirequiem@0.0.15/types.ts";
 
 export const QUOTABLE_TAGS = [
   "business",
@@ -24,7 +23,7 @@ export const QUOTABLE_TAGS = [
   "wisdom",
 ] as const;
 
-export type QuotableTag = ItemOf<typeof QUOTABLE_TAGS>;
+export type QuotableTag = typeof QUOTABLE_TAGS[number];
 
 export interface Quotable {
   _id: string;
@@ -104,8 +103,8 @@ export async function quotableRandom(
  * @returns The text of a quote.
  */
 export async function cleanQuote() {
-  const quote = await quotableRandom();
-  return quote.content;
+  const { content } = await quotableRandom();
+  return content;
 }
 
 /**

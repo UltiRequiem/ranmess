@@ -1,6 +1,8 @@
 import { Command } from "https://deno.land/x/cliffy@v0.24.2/command/mod.ts";
 import { colors } from "https://deno.land/x/cliffy@v0.24.2/ansi/mod.ts";
+
 import pLimit from "https://esm.sh/p-limit";
+
 import { quotableRandom } from "./mod.ts";
 
 const root = new Command()
