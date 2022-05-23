@@ -51,4 +51,4 @@ jobs:
 
       - name: Node Test
         if: matrix.os == 'ubuntu-latest'
-        run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node_support.ts
+        run: NODE_OPTIONS=--experimental-fetch deno run -A scripts/node.ts
