@@ -23,7 +23,7 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         uses: actions/setup-node@v3
         with:
-          node-version: "17.5"
+          node-version: latest
 
       - name: Check Code Format
         if: matrix.os == 'ubuntu-latest'
