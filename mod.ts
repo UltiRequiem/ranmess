@@ -1,4 +1,4 @@
-import { addParams } from "https://deno.land/x/add_params@v1.1.1/mod.ts";
+import { addParams } from "https://deno.land/x/add_params@v1.2.0/mod.ts";
 
 export const QUOTABLE_TAGS = [
   "business",
