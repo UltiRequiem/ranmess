@@ -1,5 +1,5 @@
-import { Command } from "https://deno.land/x/cliffy@v0.25.0/command/mod.ts";
-import { colors } from "https://deno.land/x/cliffy@v0.25.0/ansi/mod.ts";
+import { Command } from "https://deno.land/x/cliffy@v0.25.1/command/mod.ts";
+import { colors } from "https://deno.land/x/cliffy@v0.25.1/ansi/mod.ts";
 
 import pLimit from "https://esm.sh/p-limit@4.0.0";
 
