@@ -1,5 +1,12 @@
 # ranmess
 
+A typed Quotable API client and CLI with a configurable API URL.
+
+[![npm](https://img.shields.io/npm/v/ranmess?logo=npm&color=cb3837)](https://www.npmjs.com/package/ranmess)
+[![npm downloads](https://img.shields.io/npm/dm/ranmess?color=cb3837)](https://www.npmjs.com/package/ranmess)
+[![CI](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yaml/badge.svg)](https://github.com/UltiRequiem/ranmess/actions/workflows/ci.yaml)
+[![codecov](https://codecov.io/gh/UltiRequiem/ranmess/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/ranmess)
+
 A typed client and command line tool for the [Quotable](https://github.com/lukePeavey/quotable) quotes API.
 
 > Quotable is a free, open source quotations API.
@@ -23,6 +30,8 @@ Give it the server address only, without `/random` or any other endpoint. A path
 (`https://example.com/quotes-api`).
 
 ## Usage
+
+ESM only, types included: the same import works in Node.js, Bun and browsers.
 
 ```javascript
 import { createClient, quotableRandom } from "ranmess";

@@ -1,7 +1,7 @@
 {
   "name": "ranmess",
   "version": "0.0.0-development",
-  "description": "Quotable Wrapper and CLI Tool.",
+  "description": "A typed Quotable API client and CLI with a configurable API URL.",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -20,8 +20,11 @@
   "keywords": [
     "quotes",
     "quote",
-    "random",
-    "random-quote"
+    "random-quote",
+    "quotable",
+    "cli",
+    "esm",
+    "typescript"
   ],
   "license": "MIT",
   "homepage": "https://ranmess.js.org",
@@ -33,13 +36,15 @@
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts' && prettier --check 'src/**/*.ts'",
     "fmt": "prettier --write 'src/**/*.ts'",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "bin": {
     "ranmess": "lib/cli.js"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^5.0.5",
     "eslint": "^10.13.0",
     "eslint-plugin-tsdoc": "^0.5.4",
     "eslint-plugin-unicorn": "^78.0.0",
