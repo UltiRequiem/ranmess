@@ -1,7 +1,6 @@
 # ranmess
 
 [![Code Coverage](https://codecov.io/gh/ultirequiem/ranmess/branch/main/graph/badge.svg)](https://codecov.io/gh/ultirequiem/ranmess)
-[![Deno Doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/ranmess/mod.ts)
 
 The most complete [Quotable](https://github.com/lukePeavey/quotable) API Wrapper
 and CLI Tool.
@@ -11,17 +10,6 @@ and CLI Tool.
 ## Usage
 
 The API is the same on all this platforms ✔️
-
-### [Deno 🦕](https://deno.land/x/ranmess)
-
-```javascript
-import * as ranmess from "https://deno.land/x/ranmess/mod.ts";
-
-ranmess.cleanQuote(); //=> "In seed time learn, in harvest teach, in winter enjoy."
-ranmess.cleanQuote(); //=> "A leader is one who knows the way, goes the way, and shows the way."
-
-ranmess.cleanTags(); //=> ["business", "education", "faith", "famous-quotes", ...etc]
-```
 
 ### [Node.js 🐢🚀](https://npmjs.com/package/ranmess)
 
@@ -80,10 +68,7 @@ A random quote and its author will be printed!
 Open an Issue, I will check it a soon as possible 👀
 
 If you want to hurry me up a bit
-[send me a tweet](https://twitter.com/UltiRequiem) 😆
-
-Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
-my work 🚀
+[send me a tweet](https://x.com/UltiRequiem) 😆
 
 Don't forget to star the repo ⭐
 
